@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Module Robotics Choice Log</title>
+<style>
+  :root{--fg:#1d2330;--mut:#5b6475;--acc:#0e6e6e;--line:#9aa3ad;--soft:#eef3f2}
+  @page{size:letter landscape;margin:0.4in}
+  *{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff;color:var(--fg);font:13px/1.35 system-ui,"Segoe UI",Arial,sans-serif;margin:0 auto;max-width:1100px;padding:16px}
+  h1{font-size:20px;margin:0;color:var(--acc)}
+  .sub{color:var(--mut);font-size:12px;margin:2px 0 10px}
+  .head{display:grid;grid-template-columns:2fr 1.3fr;gap:10px 24px;margin-bottom:10px}
+  .field{border-bottom:1.5px solid var(--fg);min-height:26px;display:flex;align-items:flex-end;padding-bottom:2px;flex-wrap:wrap}
+  .field b{white-space:nowrap;margin-right:8px}
+  .path span{border:1.5px solid var(--fg);border-radius:4px;padding:1px 8px;margin-left:6px;font-size:12px}
+  .how{background:var(--soft);border-left:5px solid var(--acc);padding:7px 12px;margin-bottom:10px;font-size:12px}
+  table{border-collapse:collapse;width:100%;table-layout:fixed}
+  th{background:var(--acc);color:#fff;font-size:12px;text-align:left;padding:5px 6px;border:1px solid var(--acc)}
+  td{border:1px solid var(--line);vertical-align:top;padding:5px 6px}
+  td.n{width:4%;text-align:center;font-weight:700;font-size:16px;color:var(--acc)}
+  td.q{width:24%;font-weight:600}
+  td.q i{display:block;font-weight:400;font-size:11px;color:var(--mut);margin-top:3px}
+  tr.row td{height:1.25in}
+  .page2 tr.row td{height:1.0in}
+  .page2{margin-top:18px}
+  .box{border:1.5px solid var(--fg);border-radius:6px;padding:7px 14px;margin-top:8px}
+  .box h2{font-size:15px;margin:0 0 8px;color:var(--acc)}
+  .line{border-bottom:1px solid var(--line);min-height:24px;margin-top:2px;padding:3px 0}
+  .opts span{border:1.5px solid var(--fg);border-radius:4px;padding:1px 10px;margin-right:8px}
+  .q2{margin-top:6px;font-weight:600}
+  .on{background:var(--acc);color:#fff;border-color:var(--acc)!important}
+  .pick{font-weight:700;color:var(--acc)}
+  .nums table{margin-top:6px;font-size:12px}
+  .nums td,.nums th{padding:4px 6px}
+  .note{color:var(--mut);font-size:11px}
+  @media screen and (max-width:700px){.head{grid-template-columns:1fr}table{font-size:11px}}
+  @media print{body{padding:0;max-width:none}.page2{break-before:page;margin-top:0}tr{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>Module Robotics — Choice Log</h1>
+<div class="sub">BUS 150 · Globalization &amp; Innovation</div>
+
+<div class="head">
+  <div class="field"><b>Team members:</b> Cosimo Botti (I wasn't in class, so I don't know my group.)</div>
+  <div class="field path"><b>Our path (circle):</b><span class="on">A — Mexico</span><span>B — South Florida</span></div>
+</div>
+
+<div class="how"><b>My plan in one line:</b> Build cheap in Mexico, keep the parts North American so we don't get hit with tariffs, and keep a warehouse in Florida so customers get their stuff fast. It's like buying a stock: I'd rather start small with a stop-loss than go all in on day one.</div>
+
+<table>
+  <thead><tr><th style="width:4%">Stop</th><th style="width:24%">The decision</th><th>Our choice</th><th>What it buys</th><th>What it gives up</th><th>Switch signal</th></tr></thead>
+  <tbody>
+    <tr class="row"><td class="n">1</td><td class="q">Where should Module Robotics build its modules?<i>Mexico · South Florida · both</i></td>
+      <td><span class="pick">Mexico.</span> We still design in Florida.</td>
+      <td>Labor is way cheaper. About $9 to build one module in Mexico vs. $48 in the US. Trucks still get to US customers in a few days.</td>
+      <td>Every box crosses a border, so tariffs and politics can hurt us. We also lose the "Made in USA" label.</td>
+      <td>If the US drops the tariff break for USMCA goods, or the yearly USMCA review looks like the deal is ending.</td></tr>
+    <tr class="row"><td class="n">2</td><td class="q">How does a five-person company legally start producing?<i>Shelter provider · own Mexican company · contract manufacturer · own Florida shop + MEP</i></td>
+      <td><span class="pick">Shelter provider</span> (like Tetakawi).</td>
+      <td>We can start in about 30 days instead of 8 to 12 months. They handle the legal stuff, payroll, and customs. We just build.</td>
+      <td>We pay them a monthly fee, and less of the business is fully ours.</td>
+      <td>Once we're big enough that the fee costs more than running our own company in Mexico, we set up our own.</td></tr>
+    <tr class="row"><td class="n">3</td><td class="q">What crosses the border, and in what form?<i>Global parts · North American parts · finished robots · modules</i></td>
+      <td><span class="pick">Modules</span> made with <span class="pick">North American parts.</span></td>
+      <td>Keeps our LEGO idea. North American parts mean we qualify for USMCA, so no 10% tariff and no 50% Mexican tax on Chinese parts.</td>
+      <td>Parts cost more and there are fewer suppliers. More paperwork.</td>
+      <td>If too much of our parts start coming from outside North America. We stay honest so we don't end up like Ford paying $365 million.</td></tr>
+    <tr class="row"><td class="n">4</td><td class="q">Who, or what, builds the modules?<i>People in Mexico · automated cell in Florida · rented robots · mix</i></td>
+      <td><span class="pick">People in Mexico</span> for now. Rent robots later.</td>
+      <td>No huge robot bill while we're small. People can adjust if the design changes.</td>
+      <td>Mexico raised wages 13% and is cutting the workweek to 40 hours with the same pay, so our cost edge shrinks over time.</td>
+      <td>If we pass about 10,000 modules a year, or Mexican labor gets close to $9 an hour, we look at automation.</td></tr>
+  </tbody>
+</table>
+
+<div class="page2">
+<table>
+  <thead><tr><th style="width:4%">Stop</th><th style="width:24%">The decision</th><th>Our choice</th><th>What it buys</th><th>What it gives up</th><th>Switch signal</th></tr></thead>
+  <tbody>
+    <tr class="row"><td class="n">5</td><td class="q">How do the modules reach the customer?<i>Rail · truck · short haul from Florida · regional warehouse</i></td>
+      <td><span class="pick">Truck</span> to a <span class="pick">warehouse in South Florida.</span></td>
+      <td>Modules are small, so trucks work fine. With stock in the warehouse, a team that orders Monday still gets parts before a Saturday competition.</td>
+      <td>Money sits on shelves as inventory. Border lines can add days.</td>
+      <td>When we're shipping a full container every week, we switch to train (CPKC) because it's cheaper.</td></tr>
+    <tr class="row"><td class="n">6</td><td class="q">What exactly do we sell, and to whom first?<i>Global distributors · direct to US customers · modules-as-a-service</i></td>
+      <td><span class="pick">Sell direct to US customers.</span> Tell Germany "not yet."</td>
+      <td>We keep all the profit and talk to customers ourselves. Rethink Robotics bet on one foreign customer and went under. I don't want that.</td>
+      <td>We grow slower and miss early sales in Europe.</td>
+      <td>Once we have about 500 repeat US customers, we sign one or two foreign distributors.</td></tr>
+    <tr class="row"><td class="n">7</td><td class="q">How hard do we commit, and how would we back out?<i>Commit fully · stage it · run both · wait and watch</i></td>
+      <td><span class="pick">Stage it.</span> Rent, lease, and sign short contracts.</td>
+      <td>Easy to back out. Tesla paused its Mexico plant before building it, so it lost land, not a whole factory.</td>
+      <td>Costs a little more per module and we have less control.</td>
+      <td>Same as stop 1. If the tariff break ends, we move assembly to a small Florida shop.</td></tr>
+    <tr class="row"><td class="n">8</td><td class="q">Who do we serve first?<i>School teams · makers · university labs · small manufacturers</i></td>
+      <td><span class="pick">School robotics teams.</span></td>
+      <td>They have a set season, they come back every year, and they talk to each other. goBILDA already proved this works.</td>
+      <td>Small budgets, and sales only come in during the season.</td>
+      <td>If school sales are flat two seasons in a row, we start selling to small factories.</td></tr>
+  </tbody>
+</table>
+
+<div class="box nums">
+  <h2>The numbers (why I picked Mexico)</h2>
+  <table>
+    <thead><tr><th>One drive module (1.5 hours to build)</th><th>Mexico</th><th>South Florida</th></tr></thead>
+    <tbody>
+      <tr><td>Labor per hour</td><td>$5.00–$6.50</td><td>$32.00</td></tr>
+      <tr><td>Labor per module</td><td>$7.50–$9.75</td><td>$48.00</td></tr>
+      <tr><td>Savings per module</td><td colspan="2">About $38–$40</td></tr>
+      <tr><td>Savings at 5,000 modules a year</td><td colspan="2">About $190,000–$200,000 (before fees and shipping)</td></tr>
+      <tr><td>If we lose the tariff break (+10% on a $150 module)</td><td colspan="2">+$15 per module. Mexico still wins, so I'd only switch if tariffs got way higher.</td></tr>
+    </tbody>
+  </table>
+  <div class="note">The $150 price and 5,000 modules a year are my own guesses. Labor rates are from the class storybook.</div>
+</div>
+
+<div class="box">
+  <h2>Shock round (stop 7)</h2>
+  <div class="field"><b>Shock card drawn:</b> I wasn't in class, so I don't know my group or which card we drew. Here's what I would do.</div>
+  <p class="opts" style="margin:10px 0 0"><b>Did our switch signal fire?</b>&nbsp; <span>Yes</span><span>No</span>
+  &nbsp;&nbsp;&nbsp;<b>We decided to:</b>&nbsp; <span>Stay</span><span>Switch paths</span><span>Hedge (run both)</span></p>
+  <div class="q2">What does that cost us?</div>
+  <div class="line">If the card hits tariffs or USMCA, I'd hedge. Keep Mexico running and open a small shop in Florida too. Since we only rented and leased, it costs us a second lease and a few new hires, not a whole factory. If the card doesn't hit our switch signal, we stay.</div>
+</div>
+
+<div class="box">
+  <h2>Looking back</h2>
+  <div class="q2" style="margin-top:0">Did we switch paths at any stop? Which one, and why?</div>
+  <div class="line">Not fully. I stayed with Mexico, but I put the warehouse in Florida because school teams care about speed more than anything.</div>
+  <div class="q2">After choosing our first customer (stop 8), which earlier choice would we change?</div>
+  <div class="line">Stop 4. School orders spike right before the season, so I'd hire extra workers in the fall and stock up early. It's like training for a meet: you peak for the season, not all year. Cheap labor only helps if the modules are on the shelf before the rush.</div>
+</div>
+</div>
+
+</body>
+</html>
